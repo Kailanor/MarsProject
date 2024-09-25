@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LonaS Tech - Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #1a1a2e;
+            color: #e0e0e0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #16213e;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .nav-menu {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .nav-menu li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .nav-menu a {
+            color: #0f3460;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-menu a:hover {
+            color: #e94560;
+        }
+
+        .content {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+            background-color: #16213e;
+            border-radius: 10px;
+        }
+
+        h1, h2, h3 {
+            color: #e94560;
+        }
+
+        .article-summary {
+            background-color: #0f3460;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .article-summary h2 {
+            margin-top: 0;
+        }
+
+        .article-summary p {
+            line-height: 1.6;
+        }
+
+        .read-more {
+            color: #e94560;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background-color: #0f3460;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .product-card h3 {
+            color: #e94560;
+        }
+
+        .scroll-down {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .scroll-link {
+            color: #e94560;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .scroll-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #16213e;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header with Navigation -->
+    <header class="navbar">
+        <h1>LonaS Tech Products</h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <section class="content">
+        <h1>Our Products</h1>
+        <p>Explore our latest tech products designed to enhance your experience. Here are some highlights:</p>
+
+        <!-- Products Grid -->
+        <div class="products-grid">
+            <article class="product-card">
+                <h3>Gaming Laptop XYZ</h3>
+                <p>Powerful performance for serious gamers.</p>
+                <a href="#" class="read-more">View Details</a>
+            </article>
+            <article class="product-card">
+                <h3>Wireless Headset ABC</h3>
+                <p>Exceptional sound quality and comfort.</p>
+                <a href="#" class="read-more">View Details</a>
+            </article>
+            <article class="product-card">
+                <h3>Mechanical Keyboard</h3>
+                <p>Responsive keys for a better gaming experience.</p>
+                <a href="#" class="read-more">View Details</a>
+            </article>
+            <article class="product-card">
+                <h3>4K Gaming Monitor</h3>
+                <p>Stunning visuals for an immersive experience.</p>
+                <a href="#" class="read-more">View Details</a>
+            </article>
+        </div>
+
+        <!-- Scroll Down Section -->
+        <section class="scroll-down">
+            <h2>See More Products</h2>
+            <p>Check out our full product line.</p>
+            <a href="#" class="scroll-link">Go to Full Product List</a>
+        </section>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 LonaS Tech. All rights reserved.</p>
+    </footer>
+</body>
+</html>

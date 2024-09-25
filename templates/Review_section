@@ -1,0 +1,13 @@
+<!-- Products Section -->
+<section id="products" style="padding: 40px; background-color: #0f3460; border-radius: 10px; margin: 20px 0;">
+    <h2 style="color: #e94560; text-align: center;">Our Products</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+        <!-- Product Item -->
+        <div style="background-color: #16213e; margin: 10px; padding: 20px; border-radius: 10px; width: 250px;">
+            <h3 style="color: #e94560;">Product Name</h3>
+            <p style="color: #e0e0e0;">Brief description of the product goes here.</p>
+            <button style="padding: 10px; background-color: #e94560; color: #fff; border: none; border-radius: 5px;">View More</button>
+        </div>
+        <!-- Repeat above block for more products -->
+    </div>
+</section>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LonaS Tech - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #1a1a2e;
+            color: #e0e0e0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #16213e;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .nav-menu {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .nav-menu li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .nav-menu a {
+            color: #0f3460;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-menu a:hover {
+            color: #e94560;
+        }
+
+        .content {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+            background-color: #16213e;
+            border-radius: 10px;
+        }
+
+        h1, h2, h3 {
+            color: #e94560;
+        }
+
+        .article-summary {
+            background-color: #0f3460;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .article-summary h2 {
+            margin-top: 0;
+        }
+
+        .article-summary p {
+            line-height: 1.6;
+        }
+
+        .read-more {
+            color: #e94560;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+
+        /* Slideshow Styling */
+        .slideshow-container {
+            position: relative;
+            max-width: 1000px;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .mySlides {
+            display: none;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .mySlides h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .mySlides p {
+            font-size: 18px;
+        }
+
+        .slideshow-nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #ddd;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+            background-color: #e94560;
+        }
+
+        .showcase-grid {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .showcase-grid article {
+            flex: 1;
+            background-color: #0f3460;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+            max-width: 230px;
+        }
+
+        .showcase-grid article a {
+            color: #e94560;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .showcase-grid article a:hover {
+            text-decoration: underline;
+        }
+
+        /* Email Subscription Form */
+        .subscription {
+            text-align: center;
+            margin-top: 40px;
+            background-color: #16213e;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .subscription form {
+            display: inline-block;
+            text-align: left;
+        }
+
+        #email {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: #e94560;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #16213e;
+        }
+
+        footer {
+            background-color: #0f3460;
+            padding: 10px;
+            text-align: center;
+            margin-top: 40px;
+            color: #e0e0e0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Navigation Panel -->
+    <header class="navbar">
+        <h1>LonaS Tech</h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Slideshow Section -->
+    <section class="hero-section">
+        <h2>Latest Tech Innovations!</h2>
+        <p>Step into the world of tomorrow—your source for the latest tech breakthroughs!</p>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <h3>Explore Products</h3>
+                <p>Discover tech products tailored for you.</p>
+            </div>
+            <div class="mySlides fade">
+                <h3>Stay Updated</h3>
+                <p>Latest news and trends in tech.</p>
+            </div>
+            <div class="mySlides fade">
+                <h3>Reviews</h3>
+                <p>Read our top gadget reviews.</p>
+            </div>
+        </div>
+        <div class="slideshow-nav">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <!-- Summary Section -->
+    <section class="content">
+        <h2>Featured</h2>
+        <div class="article-summary">
+            <h2>News</h2>
+            <p>Stay ahead with the latest updates and breaking news in the tech world. Find out what’s trending now in gadgets, AI, and more!</p>
+            <a href="news.html" class="read-more">Read more</a>
+        </div>
+        <div class="article-summary">
+            <h2>Products</h2>
+            <p>Explore our carefully curated selection of the latest tech products—from smart gadgets to powerful devices, designed to enhance your daily life.</p>
+            <a href="products.html" class="read-more">Read more</a>
+        </div>
+        <div class="article-summary">
+            <h2>Reviews</h2>
+            <p>Get in-depth reviews on top gadgets and devices. Our expert opinions will help you make informed buying decisions.</p>
+            <a href="reviews.html" class="read-more">Read more</a>
+        </div>
+    </section>
+
+    <!-- Showcase Section -->
+    <section class="showcase">
+        <h2>Explore Our Sections</h2>
+        <div class="showcase-grid">
+            <article>
+                <h3><a href="products.html">Products</a></h3>
+                <p>Our best tech products.</p>
+            </article>
+            <article>
+                <h3><a href="news.html">News</a></h3>
+                <p>Latest tech updates.</p>
+            </article>
+            <article>
+                <h3><a href="reviews.html">Reviews</a></h3>
+                <p>Top reviews of gadgets.</p>
+            </article>
+            <article>
+                <h3><a href="contact.html">Contact Us</a></h3>
+                <p>Get in touch.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Email Subscription Section -->
+    <section class="subscription">
+        <h2>Subscribe to Our Newsletter</h2>
+        <form action="subscribe.php" method="post">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 LonaS Tech. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 5000);
+        }
+
+        function currentSlide(n) {
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[n - 1].style.display = "block";
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            dots[n - 1].className += " active";
+        }
+    </script>
+</body>
+
+</html>
